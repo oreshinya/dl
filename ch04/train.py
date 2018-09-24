@@ -23,7 +23,7 @@ optimizer = Adam()
 trainer = Trainer(model, optimizer)
 
 trainer.fit(contexts, target, max_epoch, batch_size)
-trainer.plot()
+trainer.plot(path='../output/04-train.png')
 
 word_vecs = model.word_vecs
 
