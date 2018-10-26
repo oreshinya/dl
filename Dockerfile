@@ -46,7 +46,7 @@ RUN curl -fsSL -o /usr/local/src/python.tar.xz \
   && ln -s /usr/local/bin/python3 /usr/local/bin/python
 
 RUN pip install --upgrade pip
-RUN pip install numpy matplotlib cupy
+RUN pip install numpy matplotlib
 
 RUN mkdir -p /app
 
